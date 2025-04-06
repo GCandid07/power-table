@@ -6,12 +6,7 @@
 
 ## 📸 Demonstração
 
-![Demonstração da página inicial](https://prnt.sc/4B_AqsxH0GT2)
-![Demonstração da página operador](https://prnt.sc/wiGLyKlZ2K0c)
-![Demonstração da página painel (1)](https://prnt.sc/4NzMNSY7dmyp)
-![Demonstração da página painel (2)](https://prnt.sc/fUO_hGK5F3AY)
-![Demonstração da página painel (3)](https://prnt.sc/Hy0RiOf9cDIQ)
-![Demonstração da página ranking](https://prnt.sc/bpDjAx_OosVG)
+![Demonstração da página inicial](https://github.com/user-attachments/assets/021898a6-a1ea-4662-9c00-ff76d8fa0421)
 
 ---
 
