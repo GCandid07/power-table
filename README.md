@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏋️ PowerTable – Painel Interativo para Campeonatos de Powerlifting
 
-## Getting Started
+**PowerTable** é uma aplicação em tempo real para a gestão visual de tentativas em campeonatos de powerlifting. Desenvolvido com foco em **eficiência operacional para juízes e organizadores**, o sistema exibe tentativas, cargas e resultados com uma interface clara, moderna e responsiva.
 
-First, run the development server:
+---
+
+## 📸 Demonstração
+
+![Demonstração da página inicial](https://prnt.sc/4B_AqsxH0GT2)
+![Demonstração da página operador](https://prnt.sc/wiGLyKlZ2K0c)
+![Demonstração da página painel (1)](https://prnt.sc/4NzMNSY7dmyp)
+![Demonstração da página painel (2)](https://prnt.sc/fUO_hGK5F3AY)
+![Demonstração da página painel (3)](https://prnt.sc/Hy0RiOf9cDIQ)
+![Demonstração da página ranking](https://prnt.sc/bpDjAx_OosVG)
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **Next.js (App Router)** – SSR/SSG + renderização híbrida
+- **React + Tailwind CSS** – UI reativa e estilização moderna
+- **Socket.IO** – Comunicação em tempo real entre operador e painel
+- **Express.js** – Backend simples e escalável
+- **Node.js** – Servidor HTTP e manipulação de dados
+- **CSV Parsing (em progresso)** – Importação de competidores para automação das tentativas
+
+---
+
+## ✨ Funcionalidades
+
+- Exibição em **tempo real** dos dados do atleta: nome, categoria, peso corporal e tentativa atual
+- Atualização instantânea de resultados: **LIFT VÁLIDO** ou **NO LIFT**
+- **Ranking dinâmico** baseado nas melhores tentativas válidas por movimento
+- Importação de dados via CSV (em desenvolvimento)
+- UI adaptada para **telões ou TVs** em eventos esportivos
+
+---
+
+## 🧠 Lógica do Ranking
+
+Cada competidor tem armazenado:
+- Até 3 tentativas por movimento (`squat`, `bench`, `deadlift`)
+- Apenas os **maiores valores válidos** de cada movimento são considerados
+- O **total** é a soma dos maiores valores válidos
+- O ranking é ordenado de forma decrescente por total
+
+---
+
+## 🧪 Como Executar Localmente
 
 ```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/power-table.git
+
+# Acesse a pasta
+cd power-table
+
+# Instale as dependências
+npm install
+
+# Rode o servidor em modo desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+> A aplicação ficará disponível em http://localhost:3000/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💼 Casos de Uso
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Campeonatos de Powerlifting locais e regionais
 
-## Learn More
+- Exibições públicas de desempenho em telões/monitores/transmissões
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Próximos Passos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Tela de Operador com formulário para envio das tentativas
 
-## Deploy on Vercel
+2. Importação de competidores via Excel/CSV
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Cadastro de planos e categorias
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Histórico de tentativas por atleta
