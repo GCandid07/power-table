@@ -70,10 +70,20 @@ npm run dev
 
 ## 🛠️ Próximos Passos
 
-1. Tela de Operador com formulário para envio das tentativas
+1. Tela de Operador com formulário para envio das informações ✅
 
-2. Importação de competidores via Excel/CSV
+2. Importação de competidores via Excel/CSV ✅
 
-3. Cadastro de planos e categorias
+3. Painel de acompanhamento interativo dos competidores ✅
 
-4. Histórico de tentativas por atleta
+4. Visualização de ranking com ordenação ✅
+
+5. Ordenação de ranking por categorias 🚧
+
+6. Histórico de tentativas por atleta 🚧
+
+7. Exportação de dados via Excel/CSV 🚧
+
+8. Acessibilidade a vários idiomas 🚧
+
+9. 🚧
