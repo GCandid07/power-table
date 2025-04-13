@@ -6,7 +6,7 @@
 
 ## 📸 Demonstração
 
-![Demonstração da página inicial](https://github.com/user-attachments/assets/021898a6-a1ea-4662-9c00-ff76d8fa0421)
+[Demonstração da aplicação](https://github.com/user-attachments/assets/021898a6-a1ea-4662-9c00-ff76d8fa0421)
 
 ---
 
